@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animated Print Page</title>
+    <link rel="stylesheet" href="print.css">
+</head>
+<body>
+    <div class="container">
+        <div class="content">
+            <table>
+            <tr><td>Name:</td><td id="name"></td></tr>
+            <tr><td>BUSNAME:</td><td id="bname"></td></tr>
+            <tr><td>DESTINATION:</td><td id="you"></td></tr>
+            <tr><td>Amount:</td><td id="amount"></td></tr>
+            <tr><td>Bill ID:</td><td id="billid"></td></tr>
+            </table>
+            <p>HAVE A SAFE JOURNEY!!!</p>
+        </div>
+        
+            <button class="button" id="shareButton">Share</button>
+            <button class="button" onclick="window.print()">Print</button>
+        
+    </div>
+    <script>
+    let n = document.getElementById("name").innerHTML="Karthikeyan";
+    let b = document.getElementById("bname").innerHTML="SRK";
+    let y = document.getElementById("you").innerHTML="ODC";
+    document.getElementById("amount").innerHTML="90";
+    document.getElementById("billid").innerHTML= n + "on" + b + "to" + y;
+    </script>
+</body>
+</html>

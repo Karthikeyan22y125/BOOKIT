@@ -1,0 +1,95 @@
+body {
+    background-color: #1c1c1c;
+    color: #ffffff;
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+}
+
+/* Styling for the navigation bar */
+.navbar {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    display: flex;
+    gap: 10px;
+}
+
+.nav-button {
+    background-color: #006994;
+    color: #fff;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.nav-button:hover {
+    background-color: #004d66;
+    transform: scale(1.1);
+}
+
+/* Container for the main content */
+.container {
+    border: 2px solid #006994;
+    padding: 20px;
+    border-radius: 10px;
+    width: 80%;
+    max-width: 800px;
+    background-color: #282c34;
+    text-align: center;
+}
+
+/* Title styling */
+.title {
+    text-align: center;
+    color: #00ffff;
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+/* Styling for the content boxes */
+.box-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.box {
+    width: 40%;
+    padding: 20px;
+    border: 2px solid #00ffff;
+    border-radius: 10px;
+    background-color: #333;
+    text-align: center;
+}
+
+.arrow {
+    font-size: 30px;
+    color: #00ffff;
+}
+
+/* Styling for the main button */
+.button {
+    display: block;
+    margin: 20px auto;
+    padding: 10px 20px;
+    background-color: #006994;
+    border: none;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.button:hover {
+    background-color: #004d66;
+    transform: scale(1.1);
+}

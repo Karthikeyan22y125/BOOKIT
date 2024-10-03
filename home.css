@@ -1,0 +1,99 @@
+body {
+  background-color: #1c1c1c;
+  color: #ffffff;
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+/* Container */
+.container {
+  border: 2px solid #006994;
+  padding: 20px;
+  border-radius: 10px;
+  width: 80%;
+  max-width: 800px;
+  background-color: #282c34;
+  text-align: center;
+}
+
+/* Title */
+.title {
+  text-align: center;
+  color: #00ffff;
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+/* Box container for main content */
+.box-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+/* Box style */
+.box {
+  width: 40%;
+  padding: 20px;
+  border: 2px solid #00ffff;
+  border-radius: 10px;
+  background-color: #333;
+  text-align: center;
+}
+
+/* Arrow between the boxes */
+.arrow {
+  font-size: 30px;
+  color: #00ffff;
+}
+
+/* Button style */
+.button {
+  display: block;
+  margin: 20px auto;
+  padding: 10px 20px;
+  background-color: #006994;
+  border: none;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+.button:hover {
+  background-color: #004d66;
+  transform: scale(1.1);
+}
+
+/* Responsive Design - for screens 768px or smaller */
+@media only screen and (max-width: 768px) {
+  .container {
+    width: 95%;
+    padding: 15px;
+  }
+
+  /* Stack boxes vertically on mobile */
+  .box-container {
+    flex-direction: column;
+  }
+
+  .box {
+    width: 100%;
+    margin-bottom: 15px;
+  }
+
+  .arrow {
+    display: none; /* Remove arrow in mobile view */
+  }
+
+  .button {
+    padding: 15px;
+    font-size: 18px;
+  }
+}

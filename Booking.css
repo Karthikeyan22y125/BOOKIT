@@ -1,0 +1,136 @@
+body {
+  background-color: #1c1c1c;
+  color: #ffffff;
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+/* For larger screens (PC) */
+.containerbk {
+  display: flex;
+  border: 2px solid #006994;
+  border-radius: 10px;
+  background-color: #282c34;
+  padding: 20px;
+  width: 80%;
+  max-width: 900px;
+  justify-content: space-between;
+}
+
+.list-containerbk {
+  width: 30%;
+  padding-right: 20px;
+}
+
+.list-itembk {
+  background-color: #333;
+  padding: 15px;
+  margin: 10px 0;
+  border: 2px solid #00ffff;
+  border-radius: 8px;
+  text-align: center;
+  cursor: pointer;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.list-itembk:hover {
+  background-color: #006994;
+  transform: scale(1.05);
+}
+
+.main-contentbk {
+  width: 65%;
+  padding: 20px;
+  border: 2px solid #00ffff;
+  border-radius: 10px;
+  background-color: #333;
+  line-height: 3;
+}
+
+.buttonbk {
+  display: block;
+  margin: 20px auto;
+  padding: 10px 20px;
+  background-color: #006994;
+  border: none;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+.buttonbk:hover {
+  background-color: #004d66;
+  transform: scale(1.1);
+}
+
+td {
+  text-align: center;
+  border: 2px solid #00ffff;
+  width: 300px;
+  height: 20px;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+.amtbk {
+  display: block;
+  margin: 20px auto;
+  padding: 50px;
+  text-align: center;
+  border: 5px solid #00ffff;
+  background-color: #333;
+  color: aqua;
+  border-radius: 5px;
+  height: 100px;
+  width: 180px;
+  font-size: 50px;
+}
+
+/* Responsive design for mobile screens */
+@media only screen and (max-width: 768px) {
+  /* Adjust container layout for mobile */
+  .containerbk {
+    flex-direction: column;
+    width: 95%;
+    padding: 15px;
+  }
+
+  /* Stack the list and content sections */
+  .list-containerbk,
+  .main-contentbk {
+    width: 100%;
+    padding-right: 0;
+    margin-bottom: 20px;
+  }
+
+  .main-contentbk {
+    padding: 15px;
+  }
+
+  /* Make buttons more touch-friendly */
+  .buttonbk {
+    padding: 15px;
+    font-size: 18px;
+  }
+
+  /* Adjust the amount box on mobile */
+  .amtbk {
+    width: 100%;
+    font-size: 40px;
+    padding: 20px;
+    height: auto;
+  }
+
+  /* Make table cells more compact */
+  td {
+    width: 100%;
+    height: auto;
+    padding: 15px;
+  }
+}

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Styled UI Design</title>
+<link rel="stylesheet" href="Booking.css">
+<script>
+	function show(){
+		let b = document.getElementById("bus").value;
+		if(b === "bus1"){
+		document.getElementById("bname").innerHTML="SRK";
+		document.getElementById("from").innerHTML="CBE";
+		document.getElementById("to").innerHTML="MDU";
+		document.getElementById("you").innerHTML="ODC";
+		document.getElementById("time").innerHTML="12:35pm";
+		document.getElementById("amount").innerHTML="RS:90";
+		}else if(b === "bus2"){
+			document.getElementById("bname").innerHTML="JBS";
+			document.getElementById("from").innerHTML="CBE";
+			document.getElementById("to").innerHTML="DGL";
+			document.getElementById("you").innerHTML="ODC";
+			document.getElementById("time").innerHTML="12:55pm";
+			document.getElementById("amount").innerHTML="RS:90";
+		}else{
+			document.getElementById("bname").innerHTML="null";
+			document.getElementById("from").innerHTML="null";
+			document.getElementById("to").innerHTML="null";
+			document.getElementById("you").innerHTML="null";
+			document.getElementById("time").innerHTML="null";
+			document.getElementById("amount").innerHTML="null";
+		}
+	}
+</script>
+</head>
+<body class="bodybk" >
+  <div class="containerbk">
+    <div class="list-containerbk">
+      <div onclick="show()" class="list-itembk" id="bus1" name="bus">BUS1</div>
+      <div onclick="show()" class="list-itembk" id="bus2" name="bus">BUS2</div>
+      <div onclick="show()" class="list-itembk" id="bus3" name="bus">BUS3</div>
+      <div onclick="show()" class="list-itembk" id="bus4" name="bus">BUS4</div>
+      <div onclick="show()" class="list-itembk" id="bus5" name="bus">BUS5</div>
+      <div onclick="show()" class="list-itembk" id="bus6" name="bus">BUS6</div>
+    </div>
+    <div class="main-contentbk">
+    	<table>
+    	 <tr><td>BUSNAME</td><td id ="bname">SRK</td></tr>
+    	 <tr><td>BUSFROM</td><td id="from">POLLACHI</td></tr>
+    	 <tr><td>BUSTO</td><td id="to">COIMBATORE</td></tr>
+    	 <tr><td>YOURPLACE</td><td id="you">OTHAKALMANDAPAM</td></tr>
+    	 <tr><td>YOUR DESTINATION</td><td id="time">COIMBATORE</td></tr>
+    	</table>
+    </div>
+  </div>
+  <div class="amtbk" id="amount">20</div>
+  <button class="buttonbk" onclick="window.location.href='Payment.html';">Pay</button>
+</body>
+</html>

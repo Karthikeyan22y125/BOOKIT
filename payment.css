@@ -1,0 +1,77 @@
+body {
+    background-color: #001f33; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+}
+
+.container {
+    display: flex;
+    width: 600px; 
+    padding: 40px; 
+    border: 2px solid #00ffff;
+    border-radius: 15px;
+    animation: slideIn 1s ease-out;
+}
+
+.form {
+    margin-right: 30px; 
+    display: flex;
+    flex-direction: column;
+}
+
+.input-field {
+    margin-bottom: 15px; 
+    padding: 15px; 
+    border: 1px solid #00ffff; 
+    background-color: #003366; 
+    color: #00ffff;
+    border-radius: 5px;
+    outline: none;
+    transition: transform 0.3s;
+    font-size: 16px; 
+}
+
+.input-field:focus {
+    transform: scale(1.05);
+    box-shadow: 0 0 10px #00ffff;
+}
+
+.payment-option {
+    padding: 30px; 
+    border: 2px solid #00ffff; 
+    border-radius: 15px;
+    color: #00ffff;
+    width: 100%; 
+    text-align: center;
+}
+
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+i{
+	height: 30px; 
+	margin-right: 5px;
+}
+    .button {
+      display: block;
+      margin: 20px auto;
+      padding: 10px 20px;
+      background-color: #006994;
+      border: none;
+      color: white;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background-color 0.3s, transform 0.3s;
+    }
